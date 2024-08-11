@@ -29,7 +29,7 @@ async function main() {
 
   const [signer] = await ethers.getSigners()
 
-  const contractFactory = await ethers.getContractFactory('TestNFT')
+  const contractFactory = await ethers.getContractFactory('Swissnft')
   const contract = contractFactory.attach(contractAddress)
 
   const mintFunctionName = 'mintNFT'

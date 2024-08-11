@@ -3,12 +3,12 @@ pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract TestNFT is ERC721 {
+contract Swissnft is ERC721 {
     uint256 private _currentTokenId = 0;
 
     event NFTMinted(address recipient, uint256 tokenId);
 
-    constructor() ERC721("IzzyNFT", "IZZNFT") {}
+    constructor() ERC721("Swiss NFT", "SWNFT") {}
 
     function mintNFT(address recipient) public returns (uint256) {
         _currentTokenId += 1;

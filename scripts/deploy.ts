@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 
 async function main() {
-  const Contract = await ethers.getContractFactory('TestNFT')
+  const Contract = await ethers.getContractFactory('Swissnft')
 
   console.log('Deploying NFT...')
   const contract = await Contract.deploy()
